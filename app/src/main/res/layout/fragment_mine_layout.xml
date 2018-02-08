@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorStroke">
+
+    <RelativeLayout
+        android:id="@+id/user_status_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:id="@+id/user_picture_layout"
+            android:layout_marginTop="20dp"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:layout_centerInParent="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/default_user_avatar"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/user_name_layout"
+            android:layout_width="235dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/login_button_layout"
+            android:layout_toRightOf="@+id/user_picture_layout"
+            android:layout_toEndOf="@+id/user_picture_layout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您还未登录呢"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_marginTop="20dp"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/login_button_layout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:text="马上登陆"
+                android:background="@color/colorBackground"
+                android:textSize="10sp"
+                android:layout_centerInParent="true"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mine_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_below="@+id/user_status_layout">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mine_items_recycle_view"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

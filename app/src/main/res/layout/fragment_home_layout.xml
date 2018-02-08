@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorBackground"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="28dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:background="@mipmap/bar_code_scan_icon"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_shape"
+                android:hint="@string/search_text"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="28dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:background="@mipmap/category"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@mipmap/page_loading_01"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
